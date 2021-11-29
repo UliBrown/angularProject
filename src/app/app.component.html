@@ -1,0 +1,53 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://ammper.com/" alt="Ammper Logo ">
+      <img src="../../assets/ammper-logo.png">
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" routerLink="/">
+        Home
+      </a>
+      <a href="https://ammper.com/#quienes" class="navbar-item">
+        Quienes somos
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Mas
+        </a>
+        <div class="navbar-dropdown">
+          <a  href="https://ammper.com/noticias/" class="navbar-item">
+            Noticias y Boletines
+          </a>
+          <a href="https://ammper.com/#services" class="navbar-item"> 
+            Servicios
+          </a>
+          <a href="https://ammper.com/blog-ammper/" class="navbar-item">
+            BLOG
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-light">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!--Se agrega router-outlet para poder navegar entre componentes-->
+<router-outlet></router-outlet>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    {{footer}}
+  </div>
+</footer>

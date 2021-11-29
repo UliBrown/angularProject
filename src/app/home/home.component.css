@@ -1,0 +1,31 @@
+.content{
+    background-color: #D0D3D4;
+    height: 100% !important;
+}
+
+#tittle{
+    color: #203246;
+    font-size: 8vh;
+    padding: 30px;
+}
+.column{   
+    font-size: 6vh;
+    text-align: center;
+    border: 0;
+    padding: 35px;
+    margin: 10px 10px;
+}
+
+.example-card{
+    color: #5D6D7E;
+    font-size: 6vh;
+    padding: 35px;
+    text-align: center;
+    width: 100%;
+    margin: 10px 10px;
+}
+
+.buttons{
+    padding-top: 5vh;;
+    padding-left: 30%;
+}
