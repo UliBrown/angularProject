@@ -9,7 +9,7 @@ const app = express();
 app.use(express.static('./dist/projectAngular'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: './src/app/'}),
+    res.sendFile('index.html', {root: 'dist/projectAngular/'}),
 );
 
 // Start the app by listening on the default Heroku port
