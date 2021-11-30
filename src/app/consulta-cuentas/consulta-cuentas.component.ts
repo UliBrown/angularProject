@@ -8,14 +8,20 @@ import { ServiceCtasService } from './service-ctas.service';
 })
 export class ConsultaCuentasComponent implements OnInit {
 
-  constructor( private ctasService: ServiceCtasService) { }
+  constructor( public cuentasService: ServiceCtasService) { }
 
   ngOnInit(): void {
-//Se añade subscribe para recibir el mensaje de respuesta o error de la peticion
-    this.ctasService.getBelvoBBVA().subscribe(
-    res => console.log(res),
-    err => console.log(err)
-    )
+    this.getCtas();
   }
 
+  getCtas(){
+//Se añade subscribe para recibir el mensaje de respuesta o error de la peticion
+  this.cuentasService.getBelvoBBVA().subscribe(
+  res => {
+    console.log(res);
+    this.cuentasService.consulta = res;
+  },
+  err => console.log(err)
+  )    
+  }
 }

@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test", 
+  //Se agrega comando para empaquetar el codigo despues de instalar dependencias en produccion
+    "postinstall": "npm run build"
   },
   "private": true,
   "dependencies": {

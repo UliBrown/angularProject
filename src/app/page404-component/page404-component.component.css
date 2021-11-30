@@ -1,0 +1,13 @@
+html, body{
+    height: 100% !important;
+    width: 100% !important;
+    font-size: 80px;
+}
+
+p{
+    height: 100% !important;
+    width: 100% !important;
+    align-items: center;
+    text-align: center;
+    font-size: 60px;   
+}

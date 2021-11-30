@@ -1,1 +1,47 @@
-<p>consulta-cuentas works!</p>
+<div class="buttons">
+    <a class="nav-link active" href="/"> <- Home</a>
+</div>
+<div class="col-md-8">
+    <table class="table table-sriped">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Nombre</th>
+                <th>Nombre Usuario</th>
+                <th>Email</th>
+                <th>Calle</th>
+                <th>Numero</th>
+                <th>Ciudad</th>
+                <th>Codigo Postal</th>
+                <th>Numero</th>
+                <th>Sitio Web</th>
+                <th>Nombre Empresa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let con of cuentasService.consulta">
+                <td>{{con.id}}</td>
+                <td>{{con.name}}</td>
+                <td>{{con.username}}</td>
+                <td>{{con.email}}</td>
+                <td>{{con.address.street}}</td>
+                <td>{{con.address.suite}}</td>
+                <td>{{con.address.city}}</td>
+                <td>{{con.address.zipcode}}</td>
+                <td>{{con.address.geo.lng}}</td>
+                <td>{{con.phone}}</td>
+                <td>{{con.website}}</td>
+                <td>{{con.company.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+<!--
+    <table  mat-table [Consulta]="dataSource" class="mat-elevation-z8 demo-table">
+        <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef>id.</th>
+            <td mat-cell *matCellDef="let element of cuentasService.consulta">{{element.name}}</td>
+        </ng-container>
+    </table>
+-->
+</div>
