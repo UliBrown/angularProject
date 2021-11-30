@@ -26,11 +26,9 @@
               "src/favicon.ico",
               "src/assets"
             ],
-/* Se cambia la extensión de .css a .scss, 
-la extension del archivo dentro de /src tambien es renombrada */ 
             "styles": [
+              "src/styles.css",
               "src/styles.scss", 
-              "node_modules/material-design-icons/iconfont/material-icons.css",
               "node_modules/bulma/css/bulma.min.css"
             ],
             "scripts": []
